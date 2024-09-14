@@ -27,8 +27,8 @@ The training script is `2d_ResNet_hjy.py`, which reads ultrasound image paths an
 #### Steps to Train the Model:
 
 1. Prepare the `dt_DL.csv` file, ensuring it contains the following:
-   - **Column **: Paths to the ultrasound image files.
-   - **Column **: Corresponding binary classification labels (0 or 1).
+   - Column: Paths to the ultrasound image files.
+   - Column: Corresponding binary classification labels (0 or 1).
 
 2. Run the training script:
 
