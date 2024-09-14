@@ -1,7 +1,7 @@
 
 # Project Overview
 
-This project involves the use of a 2D ResNet model for ultrasound image classification, including training and evaluation scripts. The model is based on the **ResNet50** architecture, and the dataset is provided in the `dt_DL.csv` file.
+This project involves the use of a 2D ResNet model for ultrasound image classification, including training and evaluation scripts. The model is based on the **ResNet50** architecture.
 
 ## Table of Contents
 - [Installation](#installation)
@@ -27,8 +27,8 @@ The training script is `2d_ResNet_hjy.py`, which reads ultrasound image paths an
 #### Steps to Train the Model:
 
 1. Prepare the `dt_DL.csv` file, ensuring it contains the following:
-   - **Column 3**: Paths to the ultrasound image files.
-   - **Column 5**: Corresponding binary classification labels (0 or 1).
+   - **Column **: Paths to the ultrasound image files.
+   - **Column **: Corresponding binary classification labels (0 or 1).
 
 2. Run the training script:
 
@@ -48,18 +48,10 @@ python 2d_eva_new.py
 
 #### Script Details:
 
-- **Data Loading**: The script reads the image paths and labels from the `dt_DL.csv` file.
 - **Evaluation**: The script evaluates the model on both the training and validation sets and calculates:
   - **Accuracy**
   - **AUC**
   - **Specificity** (True Negatives / (True Negatives + False Positives))
   - **Sensitivity** (True Positives / (True Positives + False Negatives))
 
-#### Output Files:
 
-- `train_probabilities35.csv`: This file contains the following columns for each sample in the training set:
-  - **DataName**: Original file path of the sample.
-  - **Probability**: The predicted probability of the positive class.
-  - **Label**: The true label of the sample.
-
-- `test_probabilities35.csv`: This file contains the same columns for each sample in the validation set.
