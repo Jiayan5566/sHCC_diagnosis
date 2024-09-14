@@ -14,7 +14,7 @@ This project involves the use of a 2D ResNet model for ultrasound image classifi
 Clone this repository:
 
 ```bash
-github.com/Jiayan5566/sHCC_diagnosis
+git clone https://github.com/Jiayan5566/sHCC_diagnosis
 cd project
 ```
 
